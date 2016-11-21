@@ -15,6 +15,7 @@ namespace Test_TXT
     {
         public string nomes;
         public int numero = 1;
+        public bool vazio = false;
         public Form1()
         {
             InitializeComponent();
@@ -27,42 +28,35 @@ namespace Test_TXT
 
         private void Exportartxt_MouseClick(object sender, MouseEventArgs e)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:/Users/thiago.mattos/Desktop/Test_TXT/InformaçõesDosFuncionários.txt", true))
-           {
-               file.WriteLine("////// Funcionario" + numero + " //////");
-              numero++;
-           }
             nomes = textBox1.Text + ";" + textBox2.Text + ";" + textBox3.Text + ";" + textBox4.Text;//informações.ToString();
             Char delimiter = ';';
             String[] substrings = nomes.Split(delimiter);
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
+            {
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:/Users/thiago.mattos/Desktop/Test_TXT/InformaçõesDosFuncionários.txt", true))
+                {
+                    file.WriteLine("////// Funcionario" + numero + " //////");
+                    numero++;
+                }
             foreach (string substring in substrings)
             {
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:/Users/thiago.mattos/Desktop/Test_TXT/InformaçõesDosFuncionários.txt", true))
                 {
-                    if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "") {
+                    
                     file.WriteLine(substring);
-                    /*if (textBox1.Text == "")
-                    {
-                        file.WriteLine("--------");
-                    }
-                    else if(textBox1.Text != "")
-                    {
-                        file.WriteLine(substring);
-                    }
-                    if (textBox2.Text == "")
-                    {
-                        file.WriteLine("--------");
-                    }
-                    else if (textBox2.Tsext != "")
-                    {
-                        file.WriteLine(substring);
-                    }*/}
+                }
+            }
+            }
                     else
                     {
-                        MessageBox.Show("Preencha todos os campos", "ERROR 404");
+                        vazio = true;
+                    }
+
+                    if(vazio)
+                    {
+                         MessageBox.Show("Preencha todos os campos", "ERROR 404");
+                         vazio = false;
                     }
                 }
             }
-        }
-    }
 }
