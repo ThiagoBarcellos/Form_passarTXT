@@ -7,3 +7,12 @@ C:\Users\thiago.mattos\Desktop\Test_TXT\Test_TXT\obj\Debug\Test_TXT.Properties.R
 C:\Users\thiago.mattos\Desktop\Test_TXT\Test_TXT\obj\Debug\Test_TXT.csproj.GenerateResource.Cache
 C:\Users\thiago.mattos\Desktop\Test_TXT\Test_TXT\obj\Debug\Test_TXT.exe
 C:\Users\thiago.mattos\Desktop\Test_TXT\Test_TXT\obj\Debug\Test_TXT.pdb
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\bin\Debug\Test_TXT.exe.config
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.exe
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.pdb
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\bin\Debug\Test_TXT.exe
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\bin\Debug\Test_TXT.pdb
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.csprojResolveAssemblyReference.cache
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.Form1.resources
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.Properties.Resources.resources
+C:\Users\thiago.mattos\Desktop\Test_TXT\TXT\Test_TXT\obj\Debug\Test_TXT.csproj.GenerateResource.Cache

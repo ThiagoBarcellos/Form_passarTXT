@@ -39,6 +39,7 @@ namespace Test_TXT
             {
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:/Users/thiago.mattos/Desktop/Test_TXT/InformaçõesDosFuncionários.txt", true))
                 {
+                    if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "") {
                     file.WriteLine(substring);
                     /*if (textBox1.Text == "")
                     {
@@ -55,7 +56,11 @@ namespace Test_TXT
                     else if (textBox2.Tsext != "")
                     {
                         file.WriteLine(substring);
-                    }*/
+                    }*/}
+                    else
+                    {
+                        MessageBox.Show("Preencha todos os campos", "ERROR 404");
+                    }
                 }
             }
         }
